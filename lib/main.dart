@@ -1,3 +1,6 @@
+import 'package:Islamic/Fragments/hadeth/hadethContent.dart';
+import 'package:Islamic/Fragments/hadeth/hadethFragment.dart';
+import 'package:Islamic/Fragments/moshaf/quranContent.dart';
 import 'package:flutter/material.dart';
 import 'homePage.dart';
 
@@ -11,7 +14,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      routes: {
+        HomePage.ROUTE_NAME : (context) => HomePage(),
+        HadethContent.ROUTE_NAME : (context) => HadethContent(),
+        suraContent.ROUTE_NAME : (context) => suraContent(),
+      },
+      initialRoute: HomePage.ROUTE_NAME,
     );
   }
 }
