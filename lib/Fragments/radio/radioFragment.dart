@@ -7,6 +7,9 @@ class radioFragment extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
+        SizedBox(
+          height: 60,
+        ),
         Expanded(
           flex: 5,
           child: Center(

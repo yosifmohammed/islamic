@@ -21,6 +21,9 @@ class _hadethFragmentState extends State<hadethFragment> {
 
     return Column(
       children: [
+        SizedBox(
+          height: 60,
+        ),
         Expanded(
           flex: 1,
           child: Center(

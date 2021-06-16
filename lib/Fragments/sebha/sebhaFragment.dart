@@ -17,6 +17,9 @@ class _sebhaFragmentState extends State<sebhaFragment> {
   Widget build(BuildContext context) {
     return Column(
       children: [
+        SizedBox(
+          height: 60,
+        ),
         Expanded(
           flex: 2,
           child: Center(
@@ -26,6 +29,9 @@ class _sebhaFragmentState extends State<sebhaFragment> {
                   image: AssetImage('assets/images/ic_sebha.png'),
                 ),
               )),
+        ),
+        SizedBox(
+          height: 15,
         ),
         Expanded(
           child: Container(

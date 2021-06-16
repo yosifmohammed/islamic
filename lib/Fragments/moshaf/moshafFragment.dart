@@ -356,12 +356,15 @@ class moshafFragment extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
+        SizedBox(
+          height: 40,
+        ),
         Expanded(
           flex: 1,
           child: Center(
               child: Padding(
-            padding: const EdgeInsets.only(top: 12),
-            child: Image(
+            padding: const EdgeInsets.only(top: 40,),
+                child: Image(
               image: AssetImage('assets/images/ic_moshaf.png'),
             ),
           )),
@@ -372,7 +375,7 @@ class moshafFragment extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 Container(
-                    margin: EdgeInsets.only(bottom: 20),
+                    margin: EdgeInsets.only(bottom: 20,),
                     child: Table(
                       defaultColumnWidth: FixedColumnWidth(120.0),
                       children: [
